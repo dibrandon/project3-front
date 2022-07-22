@@ -9,7 +9,7 @@ import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
 import AnonRoute from './components/AnonRoute'; 
-
+//comentario para test de rama pre-dev-front
 function App() {
 	return (
 		<div className="App">
