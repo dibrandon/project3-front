@@ -5,10 +5,13 @@ import HomePage from './pages/HomePage';
 import ProjectListPage from './pages/ProjectListPage';
 import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
+import AddWorldPage from './pages/AddWorldPage';
+
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute'; 
 import AnonRoute from './components/AnonRoute'; 
+import ToolsPage from './pages/ToolsPage';
 //comentario para test de rama pre-dev-front
 function App() {
 	return (
@@ -23,6 +26,24 @@ function App() {
 					element={
 						<PrivateRoute>
 							<ProjectListPage />
+						</PrivateRoute>
+					}
+				/>
+								<Route
+					exact
+					path="/addWorld"
+					element={
+						<PrivateRoute>
+							<AddWorldPage />
+						</PrivateRoute>
+					}
+				/>
+				<Route
+					exact
+					path="/tools"
+					element={
+						<PrivateRoute>
+							<ToolsPage />
 						</PrivateRoute>
 					}
 				/>
