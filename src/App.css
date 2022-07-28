@@ -49,3 +49,12 @@
 	align-items: center;
 	align-content: stretch;
 }
+
+.rack-container {
+  text-align: left;
+  padding: 2rem;
+}
+
+/* #example-collapse-text{
+  height: fit-content;
+} */

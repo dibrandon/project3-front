@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getAllWorldsService } from '../services/world.services';
 import WorldCard from '../components/WorldCard';
+import ButtonList from '../components/ButtonsList';
 
 
 function RackPage() {
@@ -27,7 +28,7 @@ function RackPage() {
     return (
         <div className="P">
             {loading && <div>Loading...</div>}
-            {!loading && worlds?.map((world) => <WorldCard key={world._id} {...world} />)}
+            {!loading && worlds?.map((world) => <ButtonList key={world._id} {...world} />)}
         </div>
     );
 }
