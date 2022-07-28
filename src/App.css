@@ -1,5 +1,7 @@
 .App {
-  /* text-align: center; */
+   text-align: center;
+   text-decoration: none;
+   
 }
 
 .App-logo {
@@ -28,3 +30,22 @@
   color: #61dafb;
 }
 
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+  text-decoration: none !important;
+}
+
+.form {
+  width: 370px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+}

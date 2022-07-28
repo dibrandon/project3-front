@@ -7,9 +7,9 @@ const addNewWorldService = (newWorld) => {
 	return service.post(`${URL}/`, newWorld);
 };
 
-const getAllProjectsService = () => {
+const getAllWorldsService = () => {
 	return service.get(`${URL}/`);
 };
 
 
-export { getAllProjectsService, addNewWorldService, };
+export { getAllProjectsService, getAllWorldsService, };
