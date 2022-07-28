@@ -27,7 +27,9 @@ function NavBarB() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/tools">Herramientas</Nav.Link>
 
-            <Nav.Link as={Link} to="/addWorld">Biblioteca</Nav.Link>
+            <Nav.Link as={Link} to="/addWorld">AddWorld</Nav.Link>
+
+            <Nav.Link as={Link} to="/rackPage">Biblioteca</Nav.Link>
 
             <Nav.Link onClick={logOutUser}>Logout</Nav.Link>
 
