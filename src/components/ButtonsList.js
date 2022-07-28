@@ -10,6 +10,7 @@ function ButtonList({ nombre, _id }) {
     const [open, setOpen] = useState(false);
 
     return (
+        <div className = "rack-buttons">
       <div className="d-grid gap-2">
         <Button variant="dark" size="sm"
           onClick={() => setOpen(!open)}
@@ -90,6 +91,7 @@ function ButtonList({ nombre, _id }) {
             labore wes anderson cred nesciunt sapiente ea proident.
           </div>
         </Collapse>
+        </div>
         </div>
     );
   }
