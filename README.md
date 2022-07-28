@@ -1,3 +1,5 @@
+link al deploy https://rpg-manager-front.herokuapp.com/
+
 ### Instructions
 - npm i
 - npm start
