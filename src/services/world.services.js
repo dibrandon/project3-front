@@ -12,4 +12,4 @@ const getAllWorldsService = () => {
 };
 
 
-export { getAllProjectsService, getAllWorldsService, };
+export { addNewWorldService, getAllWorldsService, };
