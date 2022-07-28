@@ -1,10 +1,10 @@
-import AddWorld from "../components/AddWorld"
+import ToolsCenter from "../components/ToolsCenter";
 
 
 function ToolsPage(){
     return(
         <div>
-            <AddWorld />
+            <ToolsCenter />
         </div>
     )
 }
