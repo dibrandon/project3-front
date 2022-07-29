@@ -7,12 +7,14 @@ import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
 import RackPage from './pages/RackPage';
 import AddWorldPage from './pages/AddWorldPage';
+import AddCharacterPage from './pages/addCharacterPage';
 
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute';
 import AnonRoute from './components/AnonRoute';
 import ToolsPage from './pages/ToolsPage';
+import AddCharacter from './pages/addCharacterPage';
 //comentario para test de rama pre-dev-front
 function App() {
 	return (
@@ -36,6 +38,15 @@ function App() {
 					element={
 						<PrivateRoute>
 							<AddWorldPage />
+						</PrivateRoute>
+					}
+				/>
+				<Route
+					exact
+					path="/addCharacter"
+					element={
+						<PrivateRoute>
+							<AddCharacterPage />
 						</PrivateRoute>
 					}
 				/>

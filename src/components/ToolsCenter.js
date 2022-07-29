@@ -14,7 +14,7 @@ function ToolsCenter() {
 		</div>
         <div className="tools">
         <img id="addWorld" src = {iconCharacter} alt = "acceso a crear personaje" ></img>
-        <Link to={"/addWorld"}>
+        <Link to={"/addCharacter"}>
             <h3>Personaje</h3>
         </Link>
     </div>

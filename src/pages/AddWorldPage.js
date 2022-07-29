@@ -13,4 +13,3 @@ function AddWorldPage() {
 }
 
 export default AddWorldPage;
-            //    AddWorldPage
