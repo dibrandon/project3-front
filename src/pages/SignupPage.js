@@ -56,8 +56,9 @@ function SignupPage(props) {
 				<Link to={'/login'}> Login</Link>
 			</div>
 			*/}
-			<div className = "form">
+			<div className = "form container">
 				<Form onSubmit={handleSignupSubmit}>
+					<h2>Registro:</h2>
 
 					<Form.Group className="mb-3 form" controlId="formBasicEmail">
 						<Form.Label>Email:</Form.Label>

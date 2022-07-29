@@ -36,7 +36,8 @@
 	justify-content: space-around;
 	align-items: center;
 	align-content: center;
-  text-decoration: none !important;
+  text-decoration: none
+  
 }
 
 .form {
@@ -52,6 +53,15 @@
 .rack-container {
   text-align: left;
   padding: 2rem;
+}
+
+.forms {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 /* .rack-buttons {
