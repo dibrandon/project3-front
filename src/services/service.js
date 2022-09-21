@@ -8,7 +8,8 @@ const service = axios.create({
 service.interceptors.request.use((config) => {
 	//buscar el token en el localStorage
 	const storedToken = localStorage.getItem('authToken');
-	//si el token existe lo añadimos a los headers del request //pasar la autorizacion como string  indicando el tipo de autenticacion. OJO CON LOS ESPACIOS!!
+	//si el token existe lo añadimos a los headers del request 
+	//pasar la autorizacion como string  indicando el tipo de autenticacion. OJO CON LOS ESPACIOS!!
 	config.headers = storedToken && { Authorization: `Bearer ${storedToken}` };
 
 	return config;

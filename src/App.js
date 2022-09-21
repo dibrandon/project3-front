@@ -2,8 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import NavbarB from './components/NavbarB';
 import HomePage from './pages/HomePage';
-import ProjectListPage from './pages/ProjectListPage';
-import ProjectDetailsPage from './pages/ProjectDetailsPage';
 
 import RackPage from './pages/RackPage';
 import AddWorldPage from './pages/AddWorldPage';
@@ -14,7 +12,7 @@ import LoginPage from './pages/LoginPage';
 import PrivateRoute from './components/PrivateRoute';
 import AnonRoute from './components/AnonRoute';
 import ToolsPage from './pages/ToolsPage';
-import AddCharacter from './pages/addCharacterPage';
+
 //comentario para test de rama pre-dev-front
 function App() {
 	return (
@@ -23,15 +21,7 @@ function App() {
 
 			<Routes>
 				<Route exact path="/" component={HomePage} />
-				<Route
-					exact
-					path="/projects"
-					element={
-						<PrivateRoute>
-							<ProjectListPage />
-						</PrivateRoute>
-					}
-				/>
+
 				<Route
 					exact
 					path="/addWorld"
@@ -70,15 +60,6 @@ function App() {
 					}
 				/>
 
-				<Route
-					exact
-					path="/projects/:id"
-					element={
-						<PrivateRoute>
-							<ProjectDetailsPage />
-						</PrivateRoute>
-					}
-				/>
 
 				<Route
 					exact
