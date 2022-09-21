@@ -51,7 +51,7 @@ function SignupPage(props) {
 					<Form.Group className="mb-3 form" controlId="formBasicPassword">
 						<Form.Label>Password:</Form.Label>
 						<Form.Control type="password" name="password" placeholder="Password" value={password} onChange={handlePassword}/>
-						<Form.Text className="text-muted">
+						<Form.Text className="text-light">
 							Por favor ingrese una clave Alfanumerica con mayusculas y minusculas
 						</Form.Text>
 					</Form.Group>
