@@ -1,10 +1,9 @@
-//import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
 
-// We are deconstructing props object directly in the parentheses of the function
+//deconstructing props directly in the parentheses of the function
 
 function ButtonList({ nombre, breveDescripcion, descripcionFull, _id }) {
     const [open, setOpen] = useState(false);
@@ -35,12 +34,3 @@ function ButtonList({ nombre, breveDescripcion, descripcionFull, _id }) {
 export default ButtonList;
 
 
-
-// return (
-//     <div>
-//         <Link to={`/projects/${_id}`}>
-//         <button>{nombre}</button>
-//         </Link>
-//     </div>
-// );
-// }

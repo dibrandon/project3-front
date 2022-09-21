@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { getAllWorldsService } from '../services/world.services';
-import WorldCard from '../components/WorldCard';
 import ButtonList from '../components/ButtonsList';
 
 
@@ -27,15 +26,11 @@ function RackPage() {
 
     return (
         <div className="P">
-            {loading && <div>Loading...</div>}
+            {loading && <div>Cargando...</div>}
             {!loading && worlds?.map((world) => <ButtonList key={world._id} {...world} />)}
         </div>
     );
 }
-
-// { <AddProject /> }
-/* <AddWorld /> */ 
-/* {refreshProjects={getAllProjects} } */ 
 
 
 export default RackPage;
