@@ -33,29 +33,8 @@ function SignupPage(props) {
 	};
 
 	return (
-		<>
-			{/* <div className="SignupPage"> 
-				<h1>Sign Up</h1>
-
-				<form onSubmit={handleSignupSubmit}>
-					<label>Email:</label>
-					<input type="text" name="email" value={email} onChange={handleEmail} />
-
-					<label>Password:</label>
-					<input type="password" name="password" value={password} onChange={handlePassword} />
-
-					<label>Name:</label>
-					<input type="text" name="name" value={name} onChange={handleName} />
-
-					<button type="submit">Sign Up</button>
-				</form>
-
-				{errorMessage && <p className="error-message">{errorMessage}</p>}
-
-				<p>Already have account?</p>
-				<Link to={'/login'}> Login</Link>
-			</div>
-			*/}
+		
+		
 			<div className = "form container">
 				<Form onSubmit={handleSignupSubmit}>
 					<h2>Registro:</h2>
@@ -63,9 +42,6 @@ function SignupPage(props) {
 					<Form.Group className="mb-3 form" controlId="formBasicEmail">
 						<Form.Label>Email:</Form.Label>
 						<Form.Control type="email" name="email" value={email} onChange={handleEmail} placeholder="Ingese su email" />
-						{/* <Form.Text className="text-muted">
-							We'll never share your email with anyone else. 
-						</Form.Text>*/}
 					</Form.Group>
 					<Form.Group className="mb-3 form" controlId="formBasicEmail">
 						<Form.Label>Usuario:</Form.Label>
@@ -87,11 +63,11 @@ function SignupPage(props) {
 				</Form>
 
 				{errorMessage && <p className="error-message">{errorMessage}</p>}
-				<p>Ya tienes una cuenta?</p>
+				 <p>Ya tienes una cuenta?</p>
 				<Link to={'/login'}> Login</Link>
 
 			</div>
-		</>
+		
 	);
 }
 

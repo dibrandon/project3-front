@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import iconWorld from "../images/addWorld.png"
 import iconCharacter from "../images/addCharacter.png"
 
-// We are deconstructing props object directly in the parentheses of the function
 function ToolsCenter() {
 	return (
         <div className = "container">

@@ -46,7 +46,7 @@ function LoginPage(props) {
 		</Form.Text>*/}
 	</Form.Group>
 	<Form.Group className="mb-3 form" controlId="formBasicPassword">
-		<Form.Label>Password:</Form.Label>
+		<Form.Label>Contraseña</Form.Label>
 		<Form.Control placeholder="Password" type="password" name="password" value={password} onChange={handlePassword}/>
 	</Form.Group>
 
@@ -57,8 +57,8 @@ function LoginPage(props) {
 </Form>
 			{errorMessage && <p className="error-message">{errorMessage}</p>}
 
-			<p>Don't have an account yet?</p>
-			<Link to={'/signup'}> Sign Up</Link>
+			<p>Aún no tienes cuenta?</p>
+			<Link to={'/signup'}> Registrate</Link>
 		</div>
 	);
 }
